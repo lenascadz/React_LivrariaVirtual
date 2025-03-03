@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+
+*{
+    max-height: 1024px;
+    background-color: white ;
+    font-family: "Manrope";
+}
+   
+.foto{
+    width: 45rem;
+    height: 64rem;
+}
+.logo{
+    width: 8rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 300px;
+}
+
+.saudacao{
+    margin-top: 7.5rem;
+    margin-left: 10rem;
+}
+.saudacao h2{
+    color: rgba(9, 9, 55, 0.6);
+    font-size: 24px;
+    font-weight: 600;
+}
+.saudacao h1{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Manrope";
+}
+
+.form{
+    margin-left: 10rem;
+    margin-top: 5rem;
+    font-size: 30px;
+}
+/* .form{
+    display: flex;
+    align-items: center;
+    margin-left: 605px; 
+}*/
+.capa{
+    display: flex;
+
+}
