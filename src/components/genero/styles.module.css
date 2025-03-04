@@ -1,37 +1,53 @@
 .container {
     width: 90%;
     margin: auto;
+    padding-top: 20px;
 }
 
-.generoSection {
-    margin-top: 2.5rem;
+.voltar {
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(82, 69, 182);
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
-.generoHeader {
-    display: flex;
-    justify-content: space-between;
+.pesquisa {
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+    margin-left: 205px;
     align-items: center;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
     margin-bottom: 10px;
 }
 
 .livrosContainer {
     display: flex;
-    gap: 1.25rem; /* Espaço entre os cards */
-    flex-wrap: wrap; /* Permite que os livros quebrem a linha */
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: flex-start;
 }
 
-/* Estilizando os cards */
 .card {
-    display: flex;
-    align-items: center; /* Alinha imagem e texto verticalmente */
     background-color: rgba(244, 244, 255, 1); 
-    padding: 10px 15px;
+    padding: 12px 15px 18px 15px;
     border-radius: 0.25rem;
+    height:  23.5rem;
+    width: 12.5rem;
+    align-items: center;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-    width: 17rem;
-    height: 12.5rem;
 }
 
 .card:hover {
@@ -39,17 +55,14 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-
 .livroCapa {
-    width: 140px;
-    height: 12.5rem;
+    width: 12rem;
+    height: 16rem;
     object-fit: cover;
     border-radius: 5px;
-    margin-right: 20px;
 }
 
 .cardContent {
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -70,17 +83,18 @@
 .precoLivro {
     font-size: 16px;
     font-weight: bold;
-    color: rgb(82, 69, 182); 
+    color: rgb(82, 69, 182);
 }
 
-.verMais{
-    color: rgba(239, 107, 74, 1);
-    font-weight: bold;
-    border: none;
-    background: none;
-    font-size: 14px;
+.nenhumLivro {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    width: 100%;
 }
-.verMais:hover {
-    color:white;
+
+.voltar:hover{
     border-radius: 3px;
+    background-color:rgb(82, 69, 182);
+    color: white;
 }

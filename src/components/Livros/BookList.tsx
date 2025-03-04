@@ -41,7 +41,7 @@ export default function BooksList() {
         <div key={genero} className={styles.generoSection}>
           <div className={styles.generoHeader}>
             <h2>{genero}</h2>
-            <button className={styles.verMais} onClick={() => navigate(`/genero/${genero}`)}>Ver mais</button>
+            <button className={styles.verMais} onClick={() => navigate(`/genre/${genero}`)}>Ver mais</button>
           </div>
 
           <div className={styles.livrosContainer}>

@@ -4,23 +4,23 @@ import Home from "./pages/Home";
 import Genres from "./pages/genres";
 import BookDetais from "./pages/bookDetails";
 
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
     {
         path: "/",
-        element: <Login/>
+        element: <Login />
     },
     {
         path: "/home",
-        element: <Home/>
+        element: <Home />
     },
     {
-        path: "/genre",
-        element: <Genres/>
+        path: "/genre/:genero",  // Agora aceita o nome do gênero na URL
+        element: <Genres />
     },
     {
-        path: "/details",
-        element: <BookDetais/>
+        path: "/details/:id",  // Agora aceita o ID do livro na URL
+        element: <BookDetais />
     }
-])
+]);
 
 export default router;
