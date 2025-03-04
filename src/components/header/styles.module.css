@@ -1,0 +1,43 @@
+header {
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* Mudança para branco */
+    padding: 0 3.75rem; /* Adiciona padding nas laterais */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona um leve sombreamento */
+}
+
+/* Ajuste do logo */
+.logo img {
+    width: 60px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+}
+
+/* Container de ícones */
+.icones {
+    display: flex;
+    gap: 10px;
+}
+
+/* Botão individual para os ícones */
+.icone1, .icone2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(244, 244, 255, 1);
+    padding: 12px;
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.icone1:hover, .icone2:hover {
+    background: #dad9de; /* Efeito hover */
+}
+
+/* Ajuste dos ícones dentro dos botões */
+.icone1 img, .icone2 img {
+    width: 1.15rem;
+    height: 1.15rem;
+}

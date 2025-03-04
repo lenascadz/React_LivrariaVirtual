@@ -1,6 +1,6 @@
 import Header from "../../components/header";
 
-export default function BookDetais() {
+export default function Genres() {
     return (
         <>
             <Header/>  
