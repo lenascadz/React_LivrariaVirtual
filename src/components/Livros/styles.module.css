@@ -1,0 +1,76 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.generoSection {
+    margin-top: 2.5rem;
+}
+
+.generoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.livrosContainer {
+    display: flex;
+    gap: 1.25rem; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Permite que os livros quebrem a linha */
+    justify-content: flex-start;
+}
+
+/* Estilizando os cards */
+.card {
+    display: flex;
+    align-items: center; /* Alinha imagem e texto verticalmente */
+    background-color: rgba(244, 244, 255, 1); 
+    padding: 10px 15px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 17rem;
+    height: 12.5rem;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.livroCapa {
+    width: 140px;
+    height: 12.5rem;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tituloLivro {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.autorLivro {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.precoLivro {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(82, 69, 182); 
+}
+
+   
