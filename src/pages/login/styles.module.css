@@ -43,30 +43,51 @@ form{
     max-width: 400px;
     margin-left: 10rem;
     margin-top: 5rem;
-    font-size: 30px; 
+    font-size: 20px; 
+}
+form span{
+    color: rgb(144, 40, 40);
 }
 p{
 font-size: 1.25rem;
 }
 input{
     width: 25rem;
-    height: 1.75rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-button{
+    height: 2.5rem;
     padding: 0.5rem;
     border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgba(244, 244, 255, 1);
+}
+.botao1 button{
+    width: 26rem;
+    height: 2.75rem;
+    padding: 0.62rem 1.25rem ;
+    border: none;
+    margin-top: 4rem;
     border-radius: 4px;
     background-color:brown;
     color: white;
     font-size: 1rem;
     cursor: pointer;
 }
+
+.botao2 button{
+    width: 26rem;
+    height: 2.75rem;
+    padding: 0.62rem 1.25rem ;
+    border: 2px solid brown;
+    margin-top: 0.4rem;
+    border-radius: 4px;
+    background-color:white;
+    color: brown;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
 button:hover{
-    background-color: chocolate;
+    background-color: rgba(239, 107, 74, 1);
 }
 
 .capa{
