@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     return(
-        <header>
-            <h2> header </h2>
+        <div>
+            {/* <div className={styles.cabecalho}> 
+                <h1>teste</h1>
+            </div> */}
             <hr />
             <nav>
                 <Link to="/">login</Link>
@@ -11,6 +13,6 @@ export default function Header() {
                 <Link to="/genres"> generos </Link>
                 <Link to="/details">detalhes </Link>
             </nav>
-        </header>
+        </div>
     )
 }

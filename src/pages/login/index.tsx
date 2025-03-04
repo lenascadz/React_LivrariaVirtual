@@ -9,7 +9,7 @@ export default function Login() {
             <main>
                 <div className={styles.capa}>
                     <div className={styles.foto}>
-                        <img src="./src/assets/capa_login.png" alt="" /> 
+                        <img src="./src/assets/capa_login.png" alt="logo" /> 
                     </div> 
                     <div className={styles.infos}>
                         <div className={styles.logo}>
@@ -19,14 +19,30 @@ export default function Login() {
                             <h2> Bem vindo (a)! </h2> 
                             <h1> Entre na sua conta </h1>           
                         </div>
-                        <div className={styles.form}>
-                            <h2>E-mail</h2>
-                            <textarea placeholder="Digite aqui seu e-mail:"/>
-                            <h2>Senha</h2>
-                            <textarea placeholder="Digite aqui sua senha:"/>
-                            <button> entrar </button> 
 
-                        </div>
+                        <form className={styles.form}>
+                            <p>E-mail</p>
+                            <input 
+                                type='Email'
+                                className={styles.input}
+                                placeholder='Digite aqui seu email' 
+                            />
+                            
+                            <p>Senha</p>
+                            <input 
+                                type='Senha'
+                                className={styles.input}
+                                placeholder='Digite aqui sua senha' 
+                            />
+                            <div className={styles.botoes}>
+                                <button className='botao1' >Entrar </button>
+                                <button className='botao2'>Entrar </button>
+                            </div>
+                        </form>
+
+                        
+
+                        
                     </div>
                 </div>
             </main>
