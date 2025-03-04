@@ -4,6 +4,9 @@ import styles from './styles.module.css';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
+import { useNavigate } from 'react-router-dom'; // Importa o hook de navegação
+
+
 
 const userSchema = z.object({
     email: z.string().nonempty("O e-mail não pode ser vazio, tente novamente").refine(value=> z.string().email().safeParse(value).success, {
@@ -19,10 +22,18 @@ export default function Login() {
         resolver: zodResolver(userSchema)
     })
 
-    function createUser(data: User) {
+    const navigate = useNavigate(); // Hook para navegação
+
+    async function createUser(data: User) {
+        await new Promise(resolve=> setTimeout(resolve, 2000)) // demorar 2seg
        console.log(data)
        reset()
+
+
+       // Após o login bem-sucedido, redireciona para a página Home
+       navigate("/home");
     }
+    
 
     return (
         <main>
@@ -58,12 +69,13 @@ export default function Login() {
                         />
                         {errors.password && <span>{errors.password.message}</span>}
                         <div className={styles.botao1}>
-                            <button className='botao1' >Entrar </button>
+                            <button disabled={isSubmitting} className='botao1' >{isSubmitting ? 'Carregando...': 'Entrar' } </button>
                         </div>
+                        
+                    </form>
                         <div className={styles.botao2}>
-                            <button className='botao2' >Cadastre-se </button>
-                        </div>
-                    </form> 
+                            <button className='botao2' >Cadastre-se</button>
+                        </div> 
                 </div>
             </div>
         </main>
