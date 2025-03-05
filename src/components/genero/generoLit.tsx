@@ -50,11 +50,7 @@ export default function GeneroPage() {
         <div className={styles.livrosContainer}>
           {livrosFiltrados.length > 0 ? (
             livrosFiltrados.map((livro) => (
-              <div
-                key={livro.id}
-                className={styles.card}
-                onClick={() => navigate(`/details/${livro.id}`)}
-              >
+              <div key={livro.id} className={styles.card} onClick={() => navigate(`/details/${livro.id}`)}>
                 <img src={livro.capa} alt={livro.titulo} className={styles.livroCapa} />
                 <div className={styles.cardContent}>
                   <p className={styles.tituloLivro}>{livro.titulo}</p>

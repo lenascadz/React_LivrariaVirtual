@@ -46,7 +46,7 @@ export default function BooksList() {
 
           <div className={styles.livrosContainer}>
             {livros.map((livro) => (
-              <div key={livro.id} className={styles.card} onClick={() => navigate(`/livro/${livro.id}`)}>
+              <div key={livro.id} className={styles.card} onClick={() => navigate(`/details/${livro.id}`)}>
                 <img src={livro.capa} alt={livro.titulo} className={styles.livroCapa} />
                 <div className={styles.cardContent}>
                   <p className={styles.tituloLivro}>{livro.titulo}</p>
