@@ -31,39 +31,42 @@ export default function GeneroPage() {
   );
 
   return (
-    <>
-      <div className={styles.container}>
-        <button className={styles.voltar} onClick={() => navigate("/home")}>
-          &lt; {}
-        </button>
-
-        <input
-          type="text"
-          placeholder="Pesquisar por título"
-          className={styles.pesquisa}
-          value={pesquisa}
-          onChange={(e) => setPesquisa(e.target.value)}
-        />
-
-        <h2 className={styles.titulo}>{genero}</h2>
-
-        <div className={styles.livrosContainer}>
-          {livrosFiltrados.length > 0 ? (
-            livrosFiltrados.map((livro) => (
-              <div key={livro.id} className={styles.card} onClick={() => navigate(`/details/${livro.id}`)}>
-                <img src={livro.capa} alt={livro.titulo} className={styles.livroCapa} />
-                <div className={styles.cardContent}>
-                  <p className={styles.tituloLivro}>{livro.titulo}</p>
-                  <p className={styles.autorLivro}>{livro.autor}</p>
-                  <span className={styles.precoLivro}>R$ {livro.preco.toFixed(2)}</span>
+      <>
+        <div className={styles.container}>
+          
+          {/* NOVA DIV para alinhar o botão de voltar e o título */}
+          
+  
+          <input
+            type="text"
+            placeholder="Pesquisar por título"
+            className={styles.pesquisa}
+            value={pesquisa}
+            onChange={(e) => setPesquisa(e.target.value)}
+          />
+          <div className={styles.headerGenero}>
+            <button className={styles.voltar} onClick={() => navigate("/home")}>
+              &lt; {genero}
+            </button>
+          </div>
+  
+          <div className={styles.livrosContainer}>
+            {livrosFiltrados.length > 0 ? (
+              livrosFiltrados.map((livro) => (
+                <div key={livro.id} className={styles.card} onClick={() => navigate(`/details/${livro.id}`)}>
+                  <img src={livro.capa} alt={livro.titulo} className={styles.livroCapa} />
+                  <div className={styles.cardContent}>
+                    <p className={styles.tituloLivro}>{livro.titulo}</p>
+                    <p className={styles.autorLivro}>{livro.autor}</p>
+                    <span className={styles.precoLivro}>R$ {livro.preco.toFixed(2)}</span>
+                  </div>
                 </div>
-              </div>
-            ))
-          ) : (
-            <p className={styles.nenhumLivro}>Nenhum livro encontrado.</p>
-          )}
+              ))
+            ) : (
+              <p className={styles.nenhumLivro}>Nenhum livro encontrado.</p>
+            )}
+          </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+    );
 }

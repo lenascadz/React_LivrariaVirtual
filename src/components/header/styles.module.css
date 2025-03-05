@@ -10,8 +10,8 @@ header {
 
 /* Ajuste do logo */
 .logo img {
-    width: 60px; /* Ajuste o tamanho do logo conforme necessário */
-    height: auto;
+    width: 60px !important;
+    height: auto !important;
 }
 
 /* Container de ícones */
@@ -26,7 +26,7 @@ header {
     align-items: center;
     justify-content: center;
     background: rgba(244, 244, 255, 1);
-    padding: 12px;
+    padding: 12px 15px;
     border-radius: 10px; /* Bordas arredondadas */
     cursor: pointer;
     transition: background 0.3s ease-in-out;
